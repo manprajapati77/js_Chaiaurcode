@@ -15,3 +15,13 @@ const thisissymbol = Symbol('man')
 const thisisanothersymbol = Symbol('man')
 
 console.log(thisissymbol === thisisanothersymbol) //these are not same the output is false
+
+
+// Reference (Non Primitive)
+//Array, Objects, function
+
+const heros = ["saktiman", "man", "dhaga"]
+let obj = {
+    name : "man",
+    num : 123
+}
