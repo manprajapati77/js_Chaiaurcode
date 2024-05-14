@@ -25,3 +25,10 @@ let obj = {
     name : "man",
     num : 123
 }
+
+/* ******************************************************** */
+
+//Stack and heap memory
+
+// Stack (Primitive), Heap (Non Primitive)
+
