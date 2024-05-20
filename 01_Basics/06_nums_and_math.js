@@ -33,3 +33,6 @@ const min = 10
 const max = 20
 
 console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+
+//In Javascript there is only one type : floating type 
+//floating type is when you can write numbers with decimals then we call it floating Type
