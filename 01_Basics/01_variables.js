@@ -15,4 +15,14 @@ gmail = "Radhe Radhe"
 Prefer not to use var
 because of issue in block scope and functional scope
 */
-console.table([accountId, password, email, gmail])
+console.table([accountId, password, email, gmail]) //with the help of console.table([]) we print more than 1 value
+
+
+
+
+function toaccessaccount(sum){
+console.log(sum)
+}
+
+
+sum("k_n__love")
