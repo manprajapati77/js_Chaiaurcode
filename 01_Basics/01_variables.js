@@ -19,10 +19,3 @@ console.table([accountId, password, email, gmail]) //with the help of console.ta
 
 
 
-
-function toaccessaccount(sum){
-console.log(sum)
-}
-
-
-sum("k_n__love")
