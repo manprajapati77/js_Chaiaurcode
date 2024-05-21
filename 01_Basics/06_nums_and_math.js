@@ -9,7 +9,7 @@ const balance = new Number(400)
 // console.log(balance.toFixed(2))
 
 const othernum = 123.1589
-// console.log(othernum.toPrecision(4))
+// console.log(othernum.toPrecision(4)) // first 4 numbers tak aapko value roundof karke de dega
 
 
 const hundreds = 1000000
