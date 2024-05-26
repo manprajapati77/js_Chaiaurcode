@@ -26,13 +26,19 @@ console.log(Math.floor(5.6));
 console.log(Math.min(5, 6, 12, 01)); 
 console.log(Math.max(5, 6, 12, 01)); */
 
+//Use Math.min and Math.max with Array
+let a = [1, 2, 3, 4, 5, 6]
+console.log(Math.max(...a))
+//when you want to find the maximum value of an array using Math.max(), you can't directly pass the array to it. Instead, you need to use the spread operator (...) to expand the array elements as individual arguments to the function.
+
+
 //console.log(Math.random()) // Give value between 0 and 1 (that can also be 1 and 0)
-console.log((Math.random()*10) + 1) 
+//console.log((Math.random()*10) + 1) 
 
 const min = 10
 const max = 20
 
-console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+//console.log(Math.floor(Math.random() * (max - min + 1)) + min)
 
 //In Javascript there is only one type : floating type 
 //floating type is when you can write numbers with decimals then we call it floating Type

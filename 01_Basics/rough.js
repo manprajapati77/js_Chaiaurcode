@@ -1,11 +1,8 @@
-// let mydate = new Date("03-02-2024")
-// console.log(mydate)
-// console.log(mydate.toLocaleString())
+let obj = {
+    name: "man",
+    sur: "praja"
+}
 
-// let mydate = Date.now()
-// console.log(mydate.toLocaleString() / 1000)
-const a = [1, 2, 3, 4]
-a.forEach( (b)=>{
-   return b * 2
-} )
-console.log(a)
+ for (const ab in obj) {
+     console.log(obj[ab]) // Objcet is nor iterable with for of loop
+ }

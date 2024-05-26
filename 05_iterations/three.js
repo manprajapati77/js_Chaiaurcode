@@ -41,7 +41,7 @@ let obj = {
     sur: "praja"
 }
 
-// for (const ob of obj) {
+// for (const ab of obj) {
 //     console.log(ab) // Objcet is nor iterable with for of loop
 // }
 
