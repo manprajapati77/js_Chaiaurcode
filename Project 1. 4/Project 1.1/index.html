@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>P. 1 | Color Changing</title>
+    <style>
+        h1{
+            display: flex;
+            color: white;
+            width: 100%;
+            justify-content: center;
+            
+            
+        }
+        /* .container{
+            display: flex;
+        } */
+        
+        .subcontainer{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .button{
+            display: flex;
+             flex-direction: row; 
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 10px
+        }
+        #white{
+            background-color: white;
+        }
+        #red{
+            background-color: red;
+        }
+        #pink{
+            background-color: pink;
+        }
+        #green{
+            background-color: green;
+        }
+    </style>
 </head>
-<body>
-    
+<body style="background-color: black;">
+    <div class="container">
+    <h1>Color Scheme Switcher</h1>
+    <div class="subcontainer">
+    <span id="white" class="button"></span>
+    <span id="red" class="button"></span>
+    <span id="pink" class="button"></span>
+    <span id="green" class="button"></span>
+</div>
+</div>
+    <script src="colorchange.js"></script>
 </body>
 </html>
