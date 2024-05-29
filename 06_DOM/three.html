@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mann</title>
+</head>
+<body style="background-color: black; color: white;">
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = "myClass"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "author")
+    div.style.padding = "10px" 
+    div.style.backgroundColor = "red"
+    
+    const addText = document.createTextNode("Chai aur code") //yah direct code ko HTML me send karta he jabki className Or id pahle HTML se code ko lekar aate he fir use overwrite karte he fir use send karte he lekin isme ye code ko create karta he or send karta he ise use karne se hamari ek step bach jati he aur code fast ho jata he // recommended insted of innerText
+    //ise append karwana padta he innerText ko append nahi karwana padta he
+    div.appendChild(addText)
+    document.body.appendChild(div)
+
+</script>
+</html>

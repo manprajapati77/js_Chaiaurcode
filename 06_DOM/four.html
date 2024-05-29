@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    //In this function we are using innerHTML this is good but when we have to work on a large scale is this a big trouble for us because innerHTML use karne se ye DSA ke pure tree ko travel karta he jisse time bahut jyada lagta he
+    function addlang(lang){
+        const li = document.createElement('li')
+        li.innerHTML = `${lang}`
+        document.querySelector(".language").appendChild(li)
+    }
+    addlang("rajshree")
+
+
+    //In this function we are using createTextNode insted of innerHTML because createTextNode new tag banata he or direct html me send kar deta he isse code optimize ho jata he ya fast ho jata he
+    function addOpptiLanguage(langName){
+        const li = document.createElement('li')
+        const a = document.createTextNode(langName)
+        li.appendChild(a)
+        document.querySelector('.language').appendChild(li)
+    }
+    addOpptiLanguage("MangoDP")
+
+
+
+    //Edit
+    //if we have to change value jo pahle hi li ke ander he to hum ek or tareeke se kar sakte he jo textContent se manipulate karenge
+    
+
+        const li = document.querySelector('li:nth-child(2)')
+        const createnew = document.createElement('li')
+        createnew.textContent = "Nahi khana gandi baat"
+        li.replaceWith(createnew)
+
+        //another way to edit
+        const firstval = document.querySelector("li:first-child")
+        firstval.outerHTML = '<li>replace with typescript</li>'
+    
+
+
+        //for remove the element
+        const rem = document.querySelector('li:last-child')
+        rem.remove()
+
+
+</script>
+</html>
