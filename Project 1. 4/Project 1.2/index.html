@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Weight calculator</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 2.5em;
+    color: #00ff2a;
+}
+
+/* Form styles */
+form {
+    display: inline-block;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#weight-guid {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#weight-guid p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>BMI calculator</h1>
+    <form>
+        <p><label>Height in CM: </label> <input type="text" id="Height"></p>
+        <p><label>weight in CM: </label> <input type="text" id="weight"></p>
+        <div class="result"></div>
+        <button>Calculate</button>
+            <div id="weight-guid">
+            <p>Under weight = Less than 18.6</p>
+            <p>Normal weight = 18.6 and 24.9</p>
+            <p>Over Weight = Greater than 24.9</p>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
