@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+   
+
+    //  these are also event listener ye pahle use hota the
+     // attachEvent()
+    // jQuery (ye framework he)- on (jisme on event listener ki jagah per use hota tha)
+
+
+    //THis is some basic Events sab ache se padna he
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+// addeventlistener ka thirsd perameter false hota he jo default set hota he agar event listener me sirf 2 perameter he to tisra perameter false waha per likha nahi he lekin default me false he it's important
+
+
+//Bubbling and capturing 
+//Bubbling me niche se uper jata he jese humne ul or li liye he or dono me event listener lagaye he vo pahle konsa wala print hoga isme pahle li wala output dega fir ul wala output dega iske liye event listener ke third perameter me false dena padta he (default me false hota he to nahi dene per bhi bubbling hoga)
+
+//Capturing me uper se niche jata he jese humne ul or li liye he or dono me event listener lagaye he to vo pahle konsa wala print hoga isme pahle ul wala print hoga fir ul ke ander ka li print hoga iske liye event listener ke third perameter me true dena padta he
+
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation() //ye bubbling ko rok dega ye jis per laga he sirf uska output dega yahi uske parent per event laga he to usper output nahi dega
+    // }, false)
+    
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault(); //link ka output de dega lekin us link ko open nahi karega
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+   
+    
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        //target se tag information aa jayegi
+        //parentNode se us target ka parent select ho jayega
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>

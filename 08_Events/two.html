@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>chai with code</h2>
+    <button>submit</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Man")
+    // }, 2000)
+
+        function Man(){
+            const hold = document.querySelector('h2').innerHTML = "Change the text"
+        }
+    
+
+    let ab = setTimeout(Man, 3000)
+    
+    document.querySelector('button').addEventListener('click', function(){
+        clearTimeout(ab)
+        console.log("time has stopped")
+    })
+</script>
+</html>

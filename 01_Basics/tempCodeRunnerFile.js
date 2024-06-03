@@ -1,0 +1,1 @@
+prevGuess.push(guess);
