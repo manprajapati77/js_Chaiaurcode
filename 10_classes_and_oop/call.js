@@ -1,0 +1,1 @@
+// notes nahi liye he na video samajh aaya he ye wala
