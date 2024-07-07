@@ -1,6 +1,7 @@
 let marble = [1, 2, 3];
 let dc = [10, 20, 30];
 //marble.push(dc)
+//console.log(marble) // isse array ke ander array chala jayega mtlb [ 1, 2, 3, [ 10, 20, 30 ] ] ye output aayega isliye spread operator se ise handle karte he
 
 //let newhero = marble.concat(dc)
 
@@ -11,7 +12,7 @@ let dc = [10, 20, 30];
 // let solvemixarr = mixarr.flat(Infinity)
 // console.log(mixarr)
 // console.log(solvemixarr)
-
+/*
 console.log(Array.isArray("man")) // for check give type is array or not
 
 console.log(Array.from("hites")) // convert into array
@@ -22,3 +23,5 @@ let scr2 = 200
 let scr3 = 300
 
 console.log(Array.of(scr1, scr2, scr3))
+
+*/

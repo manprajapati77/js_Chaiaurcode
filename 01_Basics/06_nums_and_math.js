@@ -19,7 +19,7 @@ const hundreds = 1000000
 // *************************** Maths ***********************************
 
 /*console.log(Math);
-console.log(Math.abs(-5));
+console.log(Math.abs(-5)); 
 console.log(Math.round(5.5));
 console.log(Math.ceil(5.8));
 console.log(Math.floor(5.6)); 
