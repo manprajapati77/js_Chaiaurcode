@@ -1,6 +1,7 @@
-/*let strTo = "123m"
+let strTo = "123m"
 let strToNum = Number(strTo)
-console.log(typeof strToNum) */
+console.log( `why ` + typeof strToNum ) 
+//console me `` ya "" ke sath kisi aur element ko print karna ho to + sign use karna padta he nahi error deta he
 // 123m => Output : NaN, But type of this mix value is number
 
 
@@ -43,7 +44,7 @@ let negval = -value
 console.log(negval)
 */
 
-let name = "man"
-let surname = " Prajapati"
-let fulln = name + surname
-console.log(fulln)
+// let name = "man"
+// let surname = " Prajapati"
+// let fulln = name + surname
+// console.log(fulln)
